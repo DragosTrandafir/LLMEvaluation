@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Chatbot Interface</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background-color: #f4f4f9; }
+        .chat-container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        #question-input { width: 60%; padding: 10px; border: 1px solid #ccc; border-radius: 4px 0 0 4px; box-sizing: border-box; } /* Adjusted width */
+        #submit-button { width: 20%; padding: 10px; background-color: #007bff; color: white; border: none; cursor: pointer; } /* No right border-radius initially */
+        #evaluate-button { width: 20%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 0 4px 4px 0; cursor: pointer; } /* New button */
+        #submit-button:hover { background-color: #0056b3; }
+        #evaluate-button:hover { background-color: #1e7e34; }
+        .input-group { display: flex; margin-bottom: 20px; }
+        .response-box { margin-top: 20px; padding: 10px; border: 1px solid #eee; background: #fafafa; border-radius: 4px; }
+        .model-response { margin-bottom: 15px; padding: 10px; border-left: 5px solid #007bff; background: #e9f5ff; }
+        .model-response strong { display: block; margin-bottom: 5px; color: #004085; }
+        #loading-message, #evaluation-message { color: #007bff; font-weight: bold; display: none; margin-top: 10px; } /* Added evaluation message */
+        .controls { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+        .question-controls { display: flex; width: 70%; }
+        .evaluation-controls { width: 25%; }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Computer Networks Professor Bot</h2>
+
+        <div class="input-group">
+            <input type="text" id="question-input" placeholder="Ask your question (e.g., Difference between UDP and TCP)...">
+            <button id="submit-button" style="border-radius: 0 0 0 0;">Ask</button> <button id="evaluate-button">Evaluate</button> </div>
+
+        <p id="loading-message">... Generating responses from multiple models, please wait ...</p>
+        <p id="evaluation-message" style="color: #28a745; display: none;">... Running evaluation and saving scores, please wait ...</p> <div id="response-container" class="response-box">
+            <p>Responses will appear here after you submit a question.</p>
+        </div>
+    </div>
+
+    <script src="frontend.js"></script>
+</body>
+</html>
