@@ -1,0 +1,11 @@
+# Python
+*.pyc
+__pycache__/
+.venv/
+
+# IDE / project files
+.idea/
+
+# Secrets
+backend/.env
+logs/
