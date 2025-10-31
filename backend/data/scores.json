@@ -1,7 +1,7 @@
 {
-    "Qwen/Qwen2.5-7B-Instruct": "Could not complete response.",
-    "meta-llama/Llama-3.1-8B-Instruct": "Could not complete response.",
     "openai/gpt-oss-20b": "Could not complete response.",
+    "EleutherAI/gpt-neo-2.7B": "Could not complete response.",
     "mistralai/Mistral-7B-Instruct-v0.2": "Could not complete response.",
-    "EleutherAI/gpt-neo-2.7B": "Could not complete response."
+    "meta-llama/Llama-3.1-8B-Instruct": "Could not complete response.",
+    "Qwen/Qwen2.5-7B-Instruct": "Could not complete response."
 }
