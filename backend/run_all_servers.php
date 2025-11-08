@@ -8,11 +8,6 @@ $python = 'C:\\Users\\DragosTrandafiri\\PycharmProjects\\llm_evaluation_networks
 $projectRoot = 'C:\\Users\\DragosTrandafiri\\PycharmProjects\\llm_evaluation_networks';
 chdir($projectRoot);
 
-// OPTIONAL: Kill old processes on these ports before starting (Windows only)
-// $ports = [25560, 25569, 5000];
-// foreach ($ports as $port) {
-//     exec("for /f \"tokens=5\" %a in ('netstat -ano ^| findstr :$port') do taskkill /F /PID %a >nul 2>&1");
-// }
 
 // Define servers to launch
 $servers = [

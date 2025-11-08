@@ -136,7 +136,6 @@ def run_evaluation():
             responses_dict = json.load(f)
 
         score_dict = {}
-
         # Use the responses for evaluation
         for i, (model_name, r) in enumerate(responses_dict.items()):
             prompt = (
